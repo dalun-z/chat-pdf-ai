@@ -5,7 +5,7 @@ import { useDropzone } from 'react-dropzone'
 
 const FileUpload = () => {
     const { getRootProps, getInputProps } = useDropzone({
-        accept: { "application/pdf": [".pdf"]},
+        accept: { "application/pdf": [".pdf"] },
         maxFiles: 1,
         onDrop: (acceptedFiles) => {
             console.log(acceptedFiles);
@@ -18,7 +18,7 @@ const FileUpload = () => {
             })}>
                 <input {...getInputProps()} />
                 <>
-                    <Inbox className='w-10 h-10 text-blue-500'/>
+                    <Inbox className='w-10 h-10 text-blue-500' />
                     <p className='mt-2 text-sm text-slate-400'> Drop PDF File Here</p>
                 </>
             </div>
